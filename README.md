@@ -6,14 +6,14 @@ Out of the box, a subscription is required. If you do not have a subscription, m
 
 ### Disable `pve-enterprise` and `enterprise` repos
 
-![[01-enterprise-repos.png]]
+![Default Repos](https://github.com/quincyntuli/Proxmox/blob/main/images/01-enterprise-repos.png?raw=true)
 
 Disable the repos using the web interface
-![[03-disable-enterprise-repos.gif]]
+![03-disable-enterprise-repos.gif](https://github.com/quincyntuli/Proxmox/blob/main/images/03-disable-enterprise-repos.gif?raw=true)
 
 You can also do this directly with nano, for example ....
 From the file `/etc/apt/sources.list.d/pve-enterprise.list` disable pve-enterprise
-![[02-disable-enterprise-repo-nano.png]]
+![Disable Repo](https://github.com/quincyntuli/Proxmox/blob/main/images/02-disable-enterprise-repo-nano.png?raw=true)
 
 However I failed to get the .gpg file to make the repo trusted, the web interface worked better.
 
@@ -21,11 +21,11 @@ However I failed to get the .gpg file to make the repo trusted, the web interfac
 ### Add the 'no subscription' repos.
 
 Use the web interface to add the repos
-![[04-add-no-sub-repos.gif]]
+![Add no-sub Repos](https://github.com/quincyntuli/Proxmox/blob/main/images/04-add-no-sub-repos.gif?raw=true)
 
 ### Run apt-get update and upgrade
 
-![[05-apt-update-upgrade.gif]]
+![Run apt-get update](https://github.com/quincyntuli/Proxmox/blob/main/images/05-apt-update-upgrade.gif?raw=true)
 
 
 I stopped the animated video after 2 minutes as the .gif was getting too big.
